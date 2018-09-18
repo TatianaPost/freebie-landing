@@ -1,0 +1,25 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Your title: FEDRIXT
+    Site: http://fedrixt.com
+    Facebook: https://www.facebook.com/fedrixt
+    Twitter: http://www.twitter.com/fedrixtSF
+    VK: https://new.vk.com/fedrixt
+    GitHub: https://github.com/fedrixt
+            https://fedrixt.github.io/fedrixt/
+    LinkedIn: https://www.linkedin.com/in/fedrixt
+    YouTube: https://www.youtube.com/channel/UCh-fv0kIaIProZK08duUrPQ
+# THANKS
+
+    CodyHouse: https://codyhouse.co/
+    Codrops: https://tympanus.net/codrops/
+    Freehtml5: http://freehtml5.co
+
+# TECHNOLOGY COLOPHON
+
+    //TODO: add technologies
+    //FIXME: the same.
+    HTML5, CSS3, SCSS, JavaScript,jQuery, Bootstrap
