@@ -2,8 +2,8 @@
   <a href="http://fedrixt.com/">
     <img src="http://fedrixt.com/images/fedrixt_500.jpg" alt="fedrixt logo" width=72 height=72>
   </a>
-
-  <h1 align="center">LANDING</h1>
+<!-- TODO: delete brackets at least finished -->
+  <h1 align="center">LANDING (coming soon!)</h1>
   <p align="center">Simple front-end html template for faster & easier avataring your creative ideas.</p>
   <p align="center">
     <a href="https://fedrixt.github.io/landing/" title="Demo of the landing repository"><strong>Landing Demo</strong></a>
