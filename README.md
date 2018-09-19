@@ -31,7 +31,7 @@
   - scss
 - javascript
   - jquery
-- bootstrap
+- bootstrap4
 
 **Inspired & Many Thanks to:**
 - CodyHouse: https://codyhouse.co/
@@ -39,5 +39,5 @@
 - Freehtml5: http://freehtml5.co
 
 <p align="center">*** Copyright & License: ***</p>
-<p align="center"><strong>Really You can do everything what you want! Without any resctritions!</strong></p>
+<p align="center"><strong>Really You can do everything what you want! Without any resctrictions!</strong></p>
 <p align="center">Best wishes...</p>
