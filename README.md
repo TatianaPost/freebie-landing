@@ -26,12 +26,18 @@
 
 <!-- todo: complete list of technologies -->
 ## What's included:
-- html
-- css
-  - scss
-- javascript
-  - jquery
-- bootstrap4
+- scss
+- jquery
+- bootstrap 4
+- animate.css
+- flexslider
+- owl.carousel
+- pace
+- modernizr
+- jquery.countTo
+- jquery.waypoints
+- respond
+- font-awesome 4
 
 **Inspired & Many Thanks to:**
 - CSS Design Awards: https://www.cssdesignawards.com/
