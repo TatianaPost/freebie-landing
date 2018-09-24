@@ -1,0 +1,115 @@
+@mixin clearfix() {
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+// todo: make animations
+@mixin keyframes($animationName) {
+	@-webkit-keyframes #{$animationName} {
+		@content;
+	}
+	@-moz-keyframes #{$animationName} {
+		@content;
+	}
+	@-o-keyframes #{$animationName} {
+		@content;
+	}
+	@keyframes #{$animationName} {
+		@content;
+	}
+}
+
+@mixin animate($name, $duration, $timing) {
+	-webkit-animation-name: $name;
+	-moz-animation-name: $name;
+	-o-animation-name: $name;
+	animation-name: $name;
+	-webkit-animation-duration: $duration;
+	-moz-animation-duration: $duration;
+	-o-animation-duration: $duration;
+	animation-duration: $duration;
+	-webkit-animation-timing-function: $timing;
+	-moz-animation-timing-function: $timing;
+	-o-animation-timing-function: $timing;
+	animation-timing-function: $timing;
+	//-webkit-animation-delay: $time;
+	//-moz-animation-delay: $time;
+	//-o-animation-delay: $time;
+	//animation-delay: $time;
+	//-webkit-animation-iteration-count: $itaration;
+	//-moz-animation-iteration-count: $itaration;
+	//-o-animation-iteration-count: $itaration;
+	//animation-iteration-count: $itaration;
+	//-webkit-animation-direction: $direction;
+	//-moz-animation-direction: $direction;
+	//-o-animation-direction: $direction;
+	//animation-direction: $direction;
+	//-webkit-animation-fill-mode: $fill;
+	//-moz-animation-fill-mode: $fill;
+	//-o-animation-fill-mode: $fill;
+	//animation-fill-mode: $fill;
+	//-webkit-animation-play-state: $play;
+	//-moz-animation-play-state: $play;
+	//-o-animation-play-state: $play;
+	//animation-play-state: $play;
+}
+
+/******************** back ********************/
+@include keyframes(back) {
+	0% {
+		transform: scale(0, 0) rotate(322deg);
+	}
+	100% {
+		transform: scale(1, 1) rotate(-38deg);
+	}
+}
+
+@mixin back {
+	@include animate(back, 2.5s, ease-out);
+}
+
+/******************** front ********************/
+@include keyframes(front) {
+	0% {
+		opacity: 0;
+		transform: scale(0, 0) rotate(-38deg);
+	}
+	20% {
+		opacity: 1;
+		transform: scale(0, 0) rotate(-38deg);
+	}
+	100% {
+		transform: scale(1, 1) rotate(322deg);
+	}
+}
+
+@mixin front {
+	@include animate(front, 2.5s, ease-out);
+}
+
+/******************** letter ********************/
+@include keyframes(letter) {
+	0% {
+		opacity: 0;
+		transform: scale(0, 0);
+	}
+	50% {
+		opacity: 1;
+		transform: scale(0, 0);
+	}
+	90% {
+		transform: scale(1.1, 1.1);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
+
+@mixin letter {
+	@include animate(letter, 2.5s, ease-out);
+}

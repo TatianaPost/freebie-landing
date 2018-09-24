@@ -14,12 +14,14 @@
     YouTube: https://www.youtube.com/channel/UCh-fv0kIaIProZK08duUrPQ
 # THANKS
 
-    CodyHouse: https://codyhouse.co/
-    Codrops: https://tympanus.net/codrops/
-    Freehtml5: http://freehtml5.co
+    - CSS Design Awards: https://www.cssdesignawards.com/
+    - CodyHouse: https://codyhouse.co/
+    - Codrops: https://tympanus.net/codrops/
+    - FreeHTML5: http://freehtml5.co
+    - CSS-TRICKS: https://css-tricks.com/almanac/
+    - Smashing Magazine: https://www.smashingmagazine.com/
 
 # TECHNOLOGY COLOPHON
 
     //TODO: add technologies
-    //FIXME: the same.
     HTML5, CSS3, SCSS, JavaScript,jQuery, Bootstrap
