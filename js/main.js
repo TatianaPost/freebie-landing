@@ -4,7 +4,7 @@
       items:1,
       loop:true,
       center: true,
-      stagePadding: -10,
+      // stagePadding: -100,
       // nav: true,
       // autoplay: true,
       autoplayTimeout: 5000,
