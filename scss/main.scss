@@ -3,5 +3,66 @@
 @import "mixins";
 
 body {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", Arial, sans-serif;
+}
+
+/* this h1-h3 headings are hidden just for semantic markup html5 */
+.hidden {
+	display: none !important;
+}
+
+/* carousel */
+.owl-theme .owl-dots .owl-dot span {
+	background: #869791;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+	background: #D6D6D6;
+}
+
+.owl-carousel {
+	color: #ffffff;
+	padding-top: 5rem;
+	background-color: #352f44;
+}
+
+.item {
+	height: 25rem;
+}
+
+#owl-img-1, #owl-img-2, #owl-img-3 {
+	position: absolute;
+	width: 30%;
+	height: 100%;
+	top: 20rem;
+	right: 4rem;
+	-webkit-background-size: 35%;
+	background-size: 35%;
+	background-repeat: no-repeat;
+}
+
+#owl-img-1 {
+	background-image: url(../images/iphone-2.png);
+}
+
+#owl-img-2 {
+	background-image: url(../images/iphone-1.png);
+}
+
+#owl-img-3 {
+	background-image: url(../images/slide_5.jpg);
+}
+
+@media screen and (max-width: 768px) {
+	.owl-carousel .item {
+		height: 20rem;
+	}
+	#owl-img-1, #owl-img-2, #owl-img-3 {
+		right: 20rem;
+		top: 25rem;
+		-webkit-background-size: 60%;
+		background-size: 60%;
+		position: relative;
+		margin: -10rem 0 0 0;
+	}
 }

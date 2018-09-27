@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="FEDRIXT's freebie html5">
 	<meta name="author" content="fedrixt">
 	<meta property="og:url" content="https://www.facebook.com/fedrixt"/>
@@ -16,56 +15,108 @@
 	<link rel="shortcut icon" type="image/ico" href="favicon.ico">
 	<link rel="apple-touch-icon" href="fedrixt_152.jpg">
 	<link type="text/plain" rel="author" href="https://fedrixt.github.io/landing/humans.txt"/>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<!-- todo: change bootstrap.css to cdn -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/animate.min.css">
-	<link rel="stylesheet" href="css/flexslider.css">
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.default.css">
 	<link rel="stylesheet" href="css/main.css"/>
 	<script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
-	<script type="text/javascript" src="js/respond.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 	<!-- TODO: CREATE 404.html -->
+	<!-- todo: create sitemap -->
 </head>
 <body>
+<header id="main-header">
+	<h1 class="hidden">Landing <em>$</em></h1>
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+			<h2 class="hidden">Navigation</h2>
+			<a class="navbar-brand" href="#">Landing ###</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	<a class="navbar-brand" href="#">Brand</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler74" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-
-	<div class="collapse navbar-collapse" id="navbarToggler74">
-		<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-			<li class="nav-item active">
-				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-			</li>
-
-			<li class="nav-item">
-				<a class="nav-link" href="#">Link</a>
-			</li>
-
-			<li class="nav-item">
-				<a class="nav-link disabled" href="#">Disabled</a>
-			</li>
-
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown link </a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-					<a class="dropdown-item" href="#">Action</a>
-					<a class="dropdown-item" href="#">Another action</a>
-					<a class="dropdown-item" href="#">Something else here</a>
-				</div>
-			</li>
-		</ul>
-
-		<form class="form-inline my-2 my-lg-0">
-			<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-		</form>
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#" data-nav-div="home">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-nav-div="about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-nav-div="gallery">Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-nav-div="pricing">Pricing</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-nav-div="contacts">Contacts</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
 	</div>
-</nav>
-<i class="fa fa-google-plus-square"></i>
+</header>
+<h2 class="hidden">Home</h2>
+<div class="owl-carousel owl-theme owl-loaded">
+	<div class="item">
+		<h3>Case Study Title</h3>
+		<p>100% Free Fully Responsive HTML5 Bootstrap Template. Crafted with lov by the fine folks by <em>fedrixt</em></p>
+		<button type="button" class="btn btn-primary">View Case Study</button>
+		<div id="owl-img-1"></div>
+	</div>
+	<div class="item">
+		<div>
+			<h3>Case Study Title</h3>
+			<p>100% Free Fully Responsive HTML5 Bootstrap Template. Crafted with lov by the fine folks by <em>fedrixt</em></p>
+			<button type="button" class="btn btn-primary">View Case Study</button>
+		</div>
+		<div id="owl-img-2"></div>
+	</div>
+	<div class="item">
+		<div>
+			<h3>Case Study Title</h3>
+			<p>100% Free Fully Responsive HTML5 Bootstrap Template. Crafted with lov by the fine folks by <em>fedrixt</em></p>
+			<button type="button" class="btn btn-primary">View Case Study</button>
+		</div>
+		<div id="owl-img-3"></div>
+	</div>
+</div>
+<main class="container-fluid">
+	<h2>About Us</h2>
+	<hr>
+	<h3>Hercle, devatio primus!, mirabilis candidatus!Eheu, lacta!Nutrixs sunt lacteas de peritus bromium.</h3>
+	<div>
+		<!--<img src="https://via.placeholder.com/750x350/ccc/fff?text=Lorem" alt="">-->
+		<img src="images/slide_5.jpg" alt="">
+	</div>
+	<div>
+		<h3>Festus parss ducunt.</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur eaque inventore suscipit? Ab amet atque blanditiis dolorem dolorum earum, facere facilis, inventore, ipsa ipsam minus nam odio praesentium sapiente.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet explicabo illo maxime, neque quibusdam repellendus tempora. Dicta ducimus eius eos ipsum iusto nobis perspiciatis quod rerum, sequi, sit veniam voluptate?</p>
+		<button type="button" class="btn btn-primary">Read More...</button>
+	</div>
+</main>
+<div class="container-fluid">
+	<h2>Gallery</h2>
+	<hr>
+	<h3>Domus festus terror est.</h3>
+</div>
+<div class="container-fluid">
+	<h2>Pricing</h2>
+	<h3>Azureus barcass ducunt ad pes.</h3>
+</div>
+<footer class="container-fluid">
+	<h2>Contacts</h2>
+	<h3>Vox, mons, et cannabis.</h3>
+</footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/pace.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
@@ -73,9 +124,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
-<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="js/jquery.countTo.js"></script>
-<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+<script type="text/javascript" src="js/owl.carousel.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
