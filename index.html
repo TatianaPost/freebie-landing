@@ -36,7 +36,7 @@
 <!-- navigation -->
 <header id="main-header">
 	<h1 class="hidden">Landing <em>$</em></h1>
-	<div class="container-fluid">
+	<div class="container-fluid" id="main-navbar">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 			<h2 class="hidden">Navigation</h2>
 			<a class="navbar-brand" href="#">Landing ###</a>
@@ -45,7 +45,7 @@
 			</button>
 
 			<div class="collapse navbar-collapse" id="navbar">
-				<ul class="navbar-nav mr-auto">
+				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active">
 						<a class="nav-link" href="#" data-nav-div="home">Home <span class="sr-only">(current)</span></a>
 					</li>
@@ -68,34 +68,34 @@
 </header>
 <!-- home -->
 <h2 class="hidden">Home</h2>
-<div class="owl-carousel owl-theme owl-loaded">
+<div class="owl-carousel owl-theme" id="home">
 	<div class="item row">
-		<div class="col-8 text-center">
-			<h3>Sunt domuses talem peritus</h3>
-			<p>Vae. Apolloniatess nocere in hortus! Cum mons congregabo, omnes navises imperium camerarius, secundus canises. </p>
-			<button type="button" class="btn btn-primary">Read</button>
+		<div class="col-8 text-center active">
+			<h3 class="carousel-animate">Sunt domuses talem peritus</h3>
+			<p class="carousel-animate">Vae. Apolloniatess nocere in hortus! Cum mons congregabo, omnes navises imperium camerarius, secundus canises. </p>
+			<button type="button" class="btn btn-gallery carousel-animate-late">Read</button>
 		</div>
 		<div id="owl-img-1" class="col-4 img-thumbnail"></div>
 	</div>
 	<div class="item row">
 		<div class="col-8 text-center">
-			<h3>Elevatus, lamia, et valebat.</h3>
-			<p>Ecce, assimilatio! Salvus demissio grauiter acquireres habena est. Cum tabes potus, omnes byssuses manifestum raptus, azureus hilotaees. </p>
-			<button type="button" class="btn btn-primary">Read</button>
+			<h3 class="carousel-animate">Elevatus, lamia, et valebat.</h3>
+			<p class="carousel-animate">Ecce, assimilatio! Salvus demissio grauiter acquireres habena est. Cum tabes potus, omnes byssuses manifestum raptus, azureus hilotaees. </p>
+			<button type="button" class="btn btn-gallery carousel-animate-late">Read</button>
 		</div>
 		<div id="owl-img-2" class="col-4 img-thumbnail"></div>
 	</div>
 	<div class="item row">
 		<div class="col-8 text-center">
-			<h3>Cur repressor mori?</h3>
-			<p>Usus altus agripeta est. Sunt cedriumes convertam camerarius, castus consiliumes. Guttuss sunt fraticinidas de mirabilis nuclear vexatum iacere. </p>
-			<button type="button" class="btn btn-primary">Read</button>
+			<h3 class="carousel-animate">Cur repressor mori?</h3>
+			<p class="carousel-animate">Usus altus agripeta est. Sunt cedriumes convertam camerarius, castus consiliumes. Guttuss sunt fraticinidas de mirabilis nuclear vexatum iacere. </p>
+			<button type="button" class="btn btn-gallery carousel-animate-late">Read</button>
 		</div>
 		<div id="owl-img-3" class="col-4 img-thumbnail"></div>
 	</div>
 </div>
 <!-- about -->
-<main class="container-fluid">
+<main class="container-fluid" id="about">
 	<h2>About Us</h2>
 	<hr>
 	<h3>Hercle, devatio primus!, mirabilis candidatus!Eheu, lacta!Nutrixs sunt lacteas de peritus bromium.</h3>
@@ -107,13 +107,14 @@
 		<div class="col-md-4">
 			<h3>Festus parss ducunt.</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur eaque inventore suscipit? Ab amet atque blanditiis dolorem dolorum earum, facere facilis, inventore, ipsa ipsam minus nam odio praesentium sapiente.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet explicabo illo maxime, neque quibusdam repellendus tempora. Dicta ducimus eius eos ipsum iusto nobis perspiciatis quod rerum, sequi, sit veniam voluptate?</p>
+			<p>Ubi est ferox frondator? Favere inciviliter ducunt ad albus hippotoxota. Grandis hydras ducunt ad sectam. Teres, nobilis finiss saepe acquirere de barbatus, neuter elogium?</p>
+			<p>Hydra bi-color calcaria est.Ubi est brevis vita?Ecce.Bassus epos mechanice pugnas turpis est.Ubi est primus pars?Dominas studere in fatalis cubiculum!Brabeuta, absolutio, et tumultumque.Est neuter glos, cesaris.Armariums credere in audax berolinum!Monss mori!Est magnum bursa, cesaris.Potus aliquando ducunt ad dexter hilotae.</p>
 			<button type="button" class="btn btn-primary">Read More...</button>
 		</div>
 	</div>
 </main>
 <!-- gallery -->
-<div class="container-fluid">
+<div class="container-fluid" id="gallery">
 	<h2>Gallery</h2>
 	<hr>
 	<h3>Domus festus terror est. Cum domus velum, omnes boreases imperium fatalis, secundus valebates. Ubi est lotus castor?</h3>
@@ -122,7 +123,7 @@
 			<div class="row">
 				<div class="col-md-6">
 					<h4>Gabaliums ridetis</h4>
-					<hr>
+					<hr class="hr-thin">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem cupiditate illum ipsam itaque non rem. Eveniet nemo quis unde. Aut consequatur eius facere obcaecati placeat quibusdam quidem sed, tempore.</p>
 					<button type="button" class="btn btn-primary">Read</button>
 				</div>
@@ -136,7 +137,7 @@
 			<div class="row">
 				<div class="col-md-6">
 					<h4>Est alter abactor, cesaris.</h4>
-					<hr>
+					<hr class="hr-thin">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem cupiditate illum ipsam itaque non rem. Eveniet nemo quis unde. Aut consequatur eius facere obcaecati placeat quibusdam quidem sed, tempore.</p>
 					<button type="button" class="btn btn-primary">Read</button>
 				</div>
@@ -151,7 +152,7 @@
 			<div class="row">
 				<div class="col-md-6">
 					<h4>Cur abaculus crescere?</h4>
-					<hr>
+					<hr class="hr-thin">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem cupiditate illum ipsam itaque non rem. Eveniet nemo quis unde. Aut consequatur eius facere obcaecati placeat quibusdam quidem sed, tempore.</p>
 					<button type="button" class="btn btn-primary">Read</button>
 				</div>
@@ -165,7 +166,7 @@
 			<div class="row">
 				<div class="col-md-6">
 					<h4>Saga grandis hibrida est.</h4>
-					<hr>
+					<hr class="hr-thin">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem cupiditate illum ipsam itaque non rem. Eveniet nemo quis unde. Aut consequatur eius facere obcaecati placeat quibusdam quidem sed, tempore.</p>
 					<button type="button" class="btn btn-primary">Read</button>
 				</div>
@@ -177,42 +178,34 @@
 	</div>
 </div>
 <!-- pricing -->
-<div class="container-fluid">
+<div class="container-fluid" id="pricing">
 	<h2>Pricing</h2>
 	<hr>
 	<h3>Azureus barcass ducunt ad pes. Bi-color, alter caniss sapienter locus de ferox, brevis tus.</h3>
 	<div class="row">
 		<div class="card col-md-4" style="width: 18rem;">
 			<div class="card-body">
-				<h5 class="card-title">Special title treatment</h5>
+				<h5 class="card-title">Start</h5>
+				<hr class="hr-thin">
+				<h6>$100</h6>
 				<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
 				<a href="#" class="btn btn-primary">Go somewhere</a>
 			</div>
 		</div>
 		<div class="card col-md-4" style="width: 18rem;">
 			<div class="card-body">
-				<h5 class="card-title">Special title treatment</h5>
+				<h5 class="card-title">Pro</h5>
+				<hr class="hr-thin">
+				<h6>$200</h6>
 				<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
 				<a href="#" class="btn btn-primary">Go somewhere</a>
 			</div>
 		</div>
 		<div class="card col-md-4" style="width: 18rem;">
 			<div class="card-body">
-				<h5 class="card-title">Special title treatment</h5>
-				<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-				<a href="#" class="btn btn-primary">Go somewhere</a>
-			</div>
-		</div>
-		<div class="card col-md-4" style="width: 18rem;">
-			<div class="card-body">
-				<h5 class="card-title">Special title treatment</h5>
-				<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-				<a href="#" class="btn btn-primary">Go somewhere</a>
-			</div>
-		</div>
-		<div class="card col-md-4" style="width: 18rem;">
-			<div class="card-body">
-				<h5 class="card-title">Special title treatment</h5>
+				<h5 class="card-title">Plus</h5>
+				<hr class="hr-thin">
+				<h6>$300</h6>
 				<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
 				<a href="#" class="btn btn-primary">Go somewhere</a>
 			</div>
@@ -220,20 +213,29 @@
 	</div>
 </div>
 <!-- contacts -->
-<footer class="container-fluid text-center">
-	<h2>Just get in touch</h2>
+<footer class="container-fluid text-center" id="contacts">
+	<h2>Contacts</h2>
+	<hr>
+	<div class="row">
+		<div class="col-sm-6">
+			<button class="btn btn-primary btn-contacts">email: smb@example.com</button>
+		</div>
+		<div class="col-sm-6">
+			<button class="btn btn-primary btn-contacts">phone: +7 (999) 888 7777</button>
+		</div>
+	</div>
 	<hr>
 	<p>&copy; Your Own Copyrights</p>
 	<p>Freebie by <a href="http://fedrixt.com" target="_blank" title="freebie creator - fedrixt">FEDRIXT</a></p>
 	<div>
 		<ul>
-			<li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
-			<li><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
-			<li><i class="fa fa-youtube-square" aria-hidden="true"></i></li>
-			<li><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
-			<li><i class="fa fa-instagram" aria-hidden="true"></i></li>
-			<li><i class="fa fa-vk" aria-hidden="true"></i></li>
-			<li><i class="fa fa-github-square" aria-hidden="true"></i></li>
+			<li>
+				<a href="#" title="facebook" target="_blank"><i class="fa fa-3x fa-facebook-square" aria-hidden="true"></i></a>
+				<a href="#" title="twitter" target="_blank"><i class="fa fa-3x fa-twitter-square" aria-hidden="true"></i></a>
+				<a href="#" title="linkedin" target="_blank"><i class="fa fa-3x fa-linkedin-square" aria-hidden="true"></i></a>
+				<a href="#" title="github" target="_blank"><i class="fa fa-3x fa-github-square" aria-hidden="true"></i></a>
+				<a href="#" title="youtube" target="_blank"><i class="fa fa-3x fa-youtube-square" aria-hidden="true"></i></a>
+			</li>
 		</ul>
 	</div>
 </footer>

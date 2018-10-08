@@ -40,13 +40,13 @@
 - font-awesome 4
 
 **Inspired & Many Thanks to:**
-- CSS Design Awards: https://www.cssdesignawards.com/
-- CodyHouse: https://codyhouse.co/
-- Codrops: https://tympanus.net/codrops/
-- FreeHTML5: http://freehtml5.co
-- CSS-TRICKS: https://css-tricks.com/almanac/
-- Smashing Magazine: https://www.smashingmagazine.com/
+- [CSS Design Awards](https://www.cssdesignawards.com)
+- [CodyHouse](https://codyhouse.co)
+- [Codrops](https://tympanus.net/codrops)
+- [FreeHTML5](http://freehtml5.co)
+- [CSS-TRICKS](https://css-tricks.com/almanac)
+- [Smashing Magazine](https://www.smashingmagazine.com)
 
 <p align="center">*** Copyright & License: ***</p>
-<p align="center"><strong>Really You can do everything what you want! Without any resctrictions!</strong></p>
+<p align="center"><strong>Really You can do everything what you want! Without any restrictions!</strong></p>
 <p align="center">Best wishes...</p>

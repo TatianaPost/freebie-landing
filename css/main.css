@@ -81,129 +81,57 @@
   to {
     transform: rotateY(360deg); } }
 
-/******************** back ********************/
-@-webkit-keyframes back {
-  0% {
-    transform: scale(0, 0) rotate(322deg); }
-  100% {
-    transform: scale(1, 1) rotate(-38deg); } }
-
-@-moz-keyframes back {
-  0% {
-    transform: scale(0, 0) rotate(322deg); }
-  100% {
-    transform: scale(1, 1) rotate(-38deg); } }
-
-@-o-keyframes back {
-  0% {
-    transform: scale(0, 0) rotate(322deg); }
-  100% {
-    transform: scale(1, 1) rotate(-38deg); } }
-
-@keyframes back {
-  0% {
-    transform: scale(0, 0) rotate(322deg); }
-  100% {
-    transform: scale(1, 1) rotate(-38deg); } }
-
-/******************** front ********************/
-@-webkit-keyframes front {
-  0% {
-    opacity: 0;
-    transform: scale(0, 0) rotate(-38deg); }
-  20% {
-    opacity: 1;
-    transform: scale(0, 0) rotate(-38deg); }
-  100% {
-    transform: scale(1, 1) rotate(322deg); } }
-
-@-moz-keyframes front {
-  0% {
-    opacity: 0;
-    transform: scale(0, 0) rotate(-38deg); }
-  20% {
-    opacity: 1;
-    transform: scale(0, 0) rotate(-38deg); }
-  100% {
-    transform: scale(1, 1) rotate(322deg); } }
-
-@-o-keyframes front {
-  0% {
-    opacity: 0;
-    transform: scale(0, 0) rotate(-38deg); }
-  20% {
-    opacity: 1;
-    transform: scale(0, 0) rotate(-38deg); }
-  100% {
-    transform: scale(1, 1) rotate(322deg); } }
-
-@keyframes front {
-  0% {
-    opacity: 0;
-    transform: scale(0, 0) rotate(-38deg); }
-  20% {
-    opacity: 1;
-    transform: scale(0, 0) rotate(-38deg); }
-  100% {
-    transform: scale(1, 1) rotate(322deg); } }
-
-/******************** letter ********************/
-@-webkit-keyframes letter {
-  0% {
-    opacity: 0;
-    transform: scale(0, 0); }
-  50% {
-    opacity: 1;
-    transform: scale(0, 0); }
-  90% {
-    transform: scale(1.1, 1.1); }
-  100% {
-    transform: scale(1, 1); } }
-
-@-moz-keyframes letter {
-  0% {
-    opacity: 0;
-    transform: scale(0, 0); }
-  50% {
-    opacity: 1;
-    transform: scale(0, 0); }
-  90% {
-    transform: scale(1.1, 1.1); }
-  100% {
-    transform: scale(1, 1); } }
-
-@-o-keyframes letter {
-  0% {
-    opacity: 0;
-    transform: scale(0, 0); }
-  50% {
-    opacity: 1;
-    transform: scale(0, 0); }
-  90% {
-    transform: scale(1.1, 1.1); }
-  100% {
-    transform: scale(1, 1); } }
-
-@keyframes letter {
-  0% {
-    opacity: 0;
-    transform: scale(0, 0); }
-  50% {
-    opacity: 1;
-    transform: scale(0, 0); }
-  90% {
-    transform: scale(1.1, 1.1); }
-  100% {
-    transform: scale(1, 1); } }
-
+/* common */
 body {
-  font-family: "Open Sans", Arial, sans-serif; }
+  font-family: "Open Sans", Arial, sans-serif;
+  background-color: #b8babc; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ff8600; }
+
+h2, h3 {
+  text-align: center; }
+
+hr {
+  background: #8B7FAC;
+  width: 10rem;
+  height: .25rem; }
+  hr.hr-thin {
+    height: .1rem;
+    margin-left: -.2rem; }
+
+a {
+  color: #006263; }
+  a:hover, a:focus {
+    text-decoration: none;
+    color: #00cfd0; }
+
+.btn {
+  background-color: #403b4f;
+  border: none; }
+  .btn:hover, .btn:focus {
+    background-color: #8B7FAC; }
+
+.btn-gallery {
+  background-color: #ff8600; }
+
+.btn-contacts {
+  margin-bottom: 2rem; }
+
+#home, #about, #gallery, #pricing, #contacts {
+  padding: 5rem 1rem 5rem 1rem; }
+
+#gallery, #contacts {
+  background-color: #ffffff; }
+
+.row {
+  margin-top: 5rem; }
 
 /* this h1-h3 headings are hidden just for semantic markup html5 */
 .hidden {
   display: none !important; }
 
-/* carousel */
+/* owl.carousel custom changes */
 .owl-theme .owl-dots .owl-dot span {
   background: #869791; }
 
@@ -240,6 +168,16 @@ body {
 #owl-img-3 {
   background-image: url(../images/carousel-3.jpg); }
 
+footer ul {
+  margin-left: -2rem; }
+  footer ul li {
+    display: inline-block;
+    list-style-type: none; }
+    footer ul li a {
+      color: #403b4f; }
+      footer ul li a:hover, footer ul li a:focus {
+        color: #8B7FAC; }
+
 @media screen and (max-width: 768px) {
   #owl-img-1, #owl-img-2, #owl-img-3 {
     margin-right: 1rem; } }
@@ -250,12 +188,5 @@ body {
     margin-top: 5rem;
     height: 30%;
     top: 20rem; } }
-
-footer ul {
-  margin-left: -2rem; }
-
-footer ul li {
-  display: inline-block;
-  list-style-type: none; }
 
 /*# sourceMappingURL=main.css.map */

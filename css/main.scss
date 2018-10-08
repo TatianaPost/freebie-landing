@@ -62,7 +62,7 @@ a {
 /* this h1-h3 headings are hidden just for semantic markup html5 */
 
 .hidden {
-	@include hidden;
+	display: none !important;
 }
 
 /* owl.carousel custom changes */
