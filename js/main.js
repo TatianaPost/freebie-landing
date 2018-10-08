@@ -6,7 +6,7 @@
       fadeInTime = 400,         // how slow/fast you want the button to show
       fadeOutTime = 400,         // how slow/fast you want the button to hide
       scrollSpeed = 300,         // how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
-      goTopButton = $("#go-top")
+      goTopButton = $("#go-top");
     // Show or hide the sticky footer button
     $(window).on('scroll', function () {
       if ($(window).scrollTop() >= pxShow) {
@@ -25,7 +25,7 @@
       center: true,
       autoplay: true,
       autoplayTimeout: 5000,
-      autoplaySpeed: 1000,
+      autoplaySpeed: 3000,
       autoplayHoverPause: false,
       animateOut: 'fadeOut'
     });
@@ -40,7 +40,6 @@
 $(document).ready(function () {
   $(document).on("scroll", onScroll);
 
-  //smoothscroll
   $('a[href^="#"]').on('click', function (e) {
     e.preventDefault();
     $(document).off("scroll");
@@ -60,18 +59,20 @@ $(document).ready(function () {
       $(document).on("scroll", onScroll);
     });
   });
+
+  function onScroll(event) {
+    var scrollPos = $(document).scrollTop();
+    $('#menu-center a').each(function () {
+      var currLink = $(this);
+      var refElement = $(currLink.attr("href"));
+      if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+        $('#menu-center ul li a').removeClass("active");
+        currLink.addClass("active");
+      } else {
+        currLink.removeClass("active");
+      }
+    });
+  }
 });
 
-function onScroll(event) {
-  var scrollPos = $(document).scrollTop();
-  $('#menu-center a').each(function () {
-    var currLink = $(this);
-    var refElement = $(currLink.attr("href"));
-    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-      $('#menu-center ul li a').removeClass("active");
-      currLink.addClass("active");
-    } else {
-      currLink.removeClass("active");
-    }
-  });
-}
+

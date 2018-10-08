@@ -101,14 +101,14 @@ hr {
     height: .1rem;
     margin-left: -.2rem; }
 
-a {
+nav a {
   color: #ff7a00 !important;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   -ms-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s; }
-  a:hover, a:focus {
+  nav a:hover, nav a:focus {
     text-decoration: none;
     color: #ffffff !important; }
 
@@ -117,16 +117,21 @@ a {
   text-decoration: none; }
 
 .bg-light {
-  background-color: #5279bc !important; }
+  background-color: #403b4f !important; }
 
 .navbar-toggler {
   background-color: #ff7a00; }
+  .navbar-toggler:hover, .navbar-toggler:focus, .navbar-toggler:active {
+    text-decoration: none;
+    text-outline: none; }
 
 .btn {
   background-color: #403b4f;
   border: none; }
-  .btn:hover, .btn:focus {
-    background-color: #8B7FAC; }
+  .btn:hover, .btn:focus, .btn:active {
+    background-color: #8B7FAC;
+    text-decoration: none !important;
+    text-outline: none !important; }
 
 .btn-gallery {
   background-color: #ff8600; }
@@ -184,15 +189,21 @@ a {
 #owl-img-3 {
   background-image: url(../images/carousel-3.jpg); }
 
+footer a {
+  color: #ff7a00; }
+  footer a:hover, footer a:focus {
+    color: #403b4f;
+    text-decoration: none; }
+
 footer ul {
   margin-left: -2rem; }
   footer ul li {
     display: inline-block;
     list-style-type: none; }
     footer ul li a {
-      color: #403b4f; }
+      color: #403b4f !important; }
       footer ul li a:hover, footer ul li a:focus {
-        color: #8B7FAC; }
+        color: #8B7FAC !important; }
 
 @media screen and (max-width: 768px) {
   #owl-img-1, #owl-img-2, #owl-img-3 {

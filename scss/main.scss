@@ -27,7 +27,7 @@ hr {
 	}
 }
 
-a {
+nav a {
 	color: $link-color !important;
 	-webkit-transition: all .3s;
 	-moz-transition: all .3s;
@@ -39,30 +39,42 @@ a {
 		color: $link-color-hover !important;
 	}
 }
+
 .active {
 	color: #fff !important;
 	text-decoration: none;
 }
 
 .bg-light {
-	background-color: #5279bc !important;
+	background-color: $main-color !important;
 }
+
 .navbar-toggler {
 	background-color: $link-color;
+	&:hover, &:focus, &:active {
+		text-decoration: none;
+		text-outline: none;
+	}
 }
+
 .btn {
 	background-color: $main-color;
 	border: none;
-	&:hover, &:focus {
+	&:hover, &:focus, &:active {
 		background-color: $main-color-light;
+		text-decoration: none !important;
+		text-outline: none !important;
 	}
 }
+
 .btn-gallery {
 	background-color: $main-heading-color;
 }
+
 .btn-contacts {
 	margin-bottom: 2rem;
 }
+
 #home, #about, #gallery, #pricing, #contacts {
 	padding: 5rem 1rem 5rem 1rem;
 }
@@ -129,15 +141,22 @@ a {
 }
 
 footer {
+	a {
+		color: $link-color;
+		&:hover, &:focus {
+			color: $main-color;
+			text-decoration: none;
+		}
+	}
 	ul {
 		margin-left: -2rem;
 		li {
 			display: inline-block;
 			list-style-type: none;
 			a {
-				color: $main-color;
+				color: $main-color !important;
 				&:hover, &:focus {
-					color: $main-color-light;
+					color: $main-color-light !important;
 				}
 			}
 		}
