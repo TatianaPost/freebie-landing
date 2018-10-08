@@ -83,6 +83,7 @@
 
 /* common */
 body {
+  position: relative;
   font-family: "Open Sans", Arial, sans-serif;
   background-color: #b8babc; }
 
@@ -101,10 +102,22 @@ hr {
     margin-left: -.2rem; }
 
 a {
-  color: #006263; }
+  color: #ff7a00;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
   a:hover, a:focus {
     text-decoration: none;
-    color: #00cfd0; }
+    color: #ffffff; }
+
+.active {
+  color: #fff;
+  text-decoration: none; }
+
+.bg-light {
+  background-color: #5279bc !important; }
 
 .btn {
   background-color: #403b4f;
