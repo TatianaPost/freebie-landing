@@ -28,7 +28,7 @@ hr {
 }
 
 a {
-	color: $link-color;
+	color: $link-color !important;
 	-webkit-transition: all .3s;
 	-moz-transition: all .3s;
 	-ms-transition: all .3s;
@@ -36,18 +36,20 @@ a {
 	transition: all .3s;
 	&:hover, &:focus {
 		text-decoration: none;
-		color: $link-color-hover;
+		color: $link-color-hover !important;
 	}
 }
 .active {
-	color: #fff;
+	color: #fff !important;
 	text-decoration: none;
 }
 
 .bg-light {
 	background-color: #5279bc !important;
 }
-
+.navbar-toggler {
+	background-color: $link-color;
+}
 .btn {
 	background-color: $main-color;
 	border: none;
@@ -154,5 +156,39 @@ footer {
 		margin-top: 5rem;
 		height: 30%;
 		top: 20rem;
+	}
+}
+
+/* go-top button */
+#go-top {
+	position: fixed;
+	bottom: 42px;
+	right: 30px;
+	z-index: 700;
+	display: none;
+	a {
+		text-decoration: none;
+		border: 0 none;
+		display: block;
+		height: 60px;
+		width: 60px;
+		line-height: 60px;
+		text-align: center;
+		background-color: $link-color !important;
+		color: #888 !important;
+		text-transform: uppercase;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+		i {
+			font-size: 21px;
+			line-height: inherit;
+		}
+		&:hover, &:focus {
+			background: $link-color !important;
+			color: #FFFFFF !important;
+			opacity: .7;
+		}
 	}
 }
