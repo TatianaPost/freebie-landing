@@ -2,8 +2,7 @@
   <a href="http://fedrixt.com/">
     <img src="http://fedrixt.com/ext/fedrixt_500.jpg" alt="fedrixt logo" width=72 height=72>
   </a>
-<!-- TODO: delete brackets at least finished -->
-  <h1 align="center">LANDING (coming soon!)</h1>
+  <h1 align="center">LANDING</h1>
   <p align="center">Simple front-end html template for faster & easier avataring your creative ideas.</p>
   <p align="center">
     <a href="https://fedrixt.github.io/landing/" title="Demo of the landing repository"><strong>Landing Demo</strong></a>
@@ -27,17 +26,11 @@
 <!-- todo: complete list of technologies -->
 ## What's included:
 - scss
-- jquery
 - bootstrap 4
+- font-awesome 4
 - animate.css
-- flexslider
 - owl.carousel
 - pace
-- modernizr
-- jquery.countTo
-- jquery.waypoints
-- respond
-- font-awesome 4
 
 **Inspired & Many Thanks to:**
 - [CSS Design Awards](https://www.cssdesignawards.com)
