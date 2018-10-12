@@ -22,5 +22,5 @@
     - Smashing Magazine: https://www.smashingmagazine.com/
 
 # TECHNOLOGY COLOPHON
-
+    todo: complete technologies
     HTML5, CSS3, SCSS, JavaScript, jQuery, Bootstrap, font-awesome 4, animate.css, owl.carousel.js, pace.js

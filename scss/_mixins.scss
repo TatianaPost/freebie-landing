@@ -11,3 +11,51 @@
 		clear: both;
 	}
 }
+@mixin keyframes($animationName) {
+	@-webkit-keyframes #{$animationName} {
+		@content;
+	}
+	@-moz-keyframes #{$animationName} {
+		@content;
+	}
+	@-o-keyframes #{$animationName} {
+		@content;
+	}
+	@keyframes #{$animationName} {
+		@content;
+	}
+}
+@mixin animate($name, $duration, $timing) {
+	-webkit-animation-name: $name;
+	-moz-animation-name: $name;
+	-o-animation-name: $name;
+	animation-name: $name;
+	-webkit-animation-duration: $duration;
+	-moz-animation-duration: $duration;
+	-o-animation-duration: $duration;
+	animation-duration: $duration;
+	-webkit-animation-timing-function: $timing;
+	-moz-animation-timing-function: $timing;
+	-o-animation-timing-function: $timing;
+	animation-timing-function: $timing;
+	//-webkit-animation-delay: $time;
+	//-moz-animation-delay: $time;
+	//-o-animation-delay: $time;
+	//animation-delay: $time;
+	//-webkit-animation-iteration-count: $itaration;
+	//-moz-animation-iteration-count: $itaration;
+	//-o-animation-iteration-count: $itaration;
+	//animation-iteration-count: $itaration;
+	//-webkit-animation-direction: $direction;
+	//-moz-animation-direction: $direction;
+	//-o-animation-direction: $direction;
+	//animation-direction: $direction;
+	//-webkit-animation-fill-mode: $fill;
+	//-moz-animation-fill-mode: $fill;
+	//-o-animation-fill-mode: $fill;
+	//animation-fill-mode: $fill;
+	//-webkit-animation-play-state: $play;
+	//-moz-animation-play-state: $play;
+	//-o-animation-play-state: $play;
+	//animation-play-state: $play;
+}

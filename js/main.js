@@ -74,5 +74,15 @@ $(document).ready(function () {
     });
   }
 });
-
-
+// waypoint animation
+$(document).ready(function(){
+  $('.animation-left').css('opacity', 0).waypoint(function() {
+    $('.animation-left').addClass('fadeInLeft');
+  }, { offset: '50%' });
+  $('.animation-right').css('opacity', 0).waypoint(function() {
+    $('.animation-right').addClass('fadeInRight');
+  }, { offset: '50%' });
+  $('.animation-fade').css('opacity', 0).waypoint(function() {
+    $('.animation-fade').addClass('fadeInDown');
+  }, { offset: '75%' });
+});
