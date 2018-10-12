@@ -23,4 +23,4 @@
 
 # TECHNOLOGY COLOPHON
     todo: complete technologies
-    HTML5, CSS3, SCSS, JavaScript, jQuery, Bootstrap, font-awesome 4, animate.css, owl.carousel.js, pace.js
+    HTML5, CSS3, SCSS, JavaScript, jQuery, Bootstrap, font-awesome 4, animate.css, owl.carousel.js, pace.js, waypoints

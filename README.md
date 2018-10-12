@@ -31,6 +31,7 @@
 - animate.css
 - owl.carousel
 - pace
+- waypoints
 
 **Inspired & Many Thanks to:**
 - [CSS Design Awards](https://www.cssdesignawards.com)
