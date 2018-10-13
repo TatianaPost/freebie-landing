@@ -23,7 +23,6 @@
 
 <br>
 
-<!-- todo: complete list of technologies -->
 ## What's included:
 - scss
 - bootstrap 4
