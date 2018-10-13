@@ -1,7 +1,7 @@
 @import "pace";
 @import "variables";
 @import "mixins";
-/* common */
+/* custom */
 
 body {
 	position: relative;
@@ -140,6 +140,7 @@ nav a {
 	background-image: url(../images/carousel-3.jpg);
 }
 
+/* footer */
 footer {
 	a {
 		color: $link-color;
@@ -163,6 +164,7 @@ footer {
 	}
 }
 
+/* media's */
 @media screen and (max-width: 768px) {
 	#owl-img-1, #owl-img-2, #owl-img-3 {
 		margin-right: 1rem;
