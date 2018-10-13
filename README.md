@@ -5,7 +5,7 @@
   <h1 align="center">LANDING</h1>
   <p align="center">Simple front-end html template for faster & easier avataring your creative ideas.</p>
   <p align="center">
-    <a href="https://fedrixt.github.io/landing/" title="Demo of the landing repository"><strong>Landing Demo</strong></a>
+    <a href="https://fedrixt.github.io/freebie-landing/" title="Demo of the landing repository"><strong>Landing Demo</strong></a>
     <br>
     <a href="https://www.youtube.com/channel/UCh-fv0kIaIProZK08duUrPQ" target="_blank" title="fedrixt's YouTube">YouTube</a>
     ·
