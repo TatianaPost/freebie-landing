@@ -1,0 +1,144 @@
+@import "pace";
+@import "variables";
+@import "mixins";
+/* common */
+
+body {
+	font-family: "Open Sans", Arial, sans-serif;
+	background-color: $body-bg-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $main-heading-color;
+}
+
+h2, h3 {
+	text-align: center;
+}
+
+hr {
+	background: $main-color-light;
+	width: 10rem;
+	height: .25rem;
+	&.hr-thin {
+		height: .1rem;
+		margin-left: -.2rem;
+	}
+}
+
+a {
+	color: $link-color;
+	&:hover, &:focus {
+		text-decoration: none;
+		color: $link-color-hover;
+	}
+}
+
+.btn {
+	background-color: $main-color;
+	border: none;
+	&:hover, &:focus {
+		background-color: $main-color-light;
+	}
+}
+.btn-gallery {
+	background-color: $main-heading-color;
+}
+.btn-contacts {
+	margin-bottom: 2rem;
+}
+#home, #about, #gallery, #pricing, #contacts {
+	padding: 5rem 1rem 5rem 1rem;
+}
+
+#gallery, #contacts {
+	background-color: $section-bg-color;
+}
+
+.row {
+	margin-top: 5rem;
+}
+
+/* this h1-h3 headings are hidden just for semantic markup html5 */
+
+.hidden {
+	display: none !important;
+}
+
+/* owl.carousel custom changes */
+
+.owl-theme .owl-dots .owl-dot {
+	span {
+		background: #869791;
+	}
+	&.active span, &:hover span {
+		background: #D6D6D6;
+	}
+}
+
+.owl-carousel {
+	color: #ffffff;
+	padding-top: 5rem;
+	background-color: #403b4f;
+	padding-bottom: 2rem;
+	padding-left: 2rem;
+}
+
+.item {
+	height: 50rem;
+}
+
+#owl-img-1, #owl-img-2, #owl-img-3 {
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	top: 15rem;
+	right: 3rem;
+	margin-right: 10rem;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#owl-img-1 {
+	background-image: url(../images/carousel-1.jpg);
+}
+
+#owl-img-2 {
+	background-image: url(../images/carousel-2.jpg);
+}
+
+#owl-img-3 {
+	background-image: url(../images/carousel-3.jpg);
+}
+
+footer {
+	ul {
+		margin-left: -2rem;
+		li {
+			display: inline-block;
+			list-style-type: none;
+			a {
+				color: $main-color;
+				&:hover, &:focus {
+					color: $main-color-light;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#owl-img-1, #owl-img-2, #owl-img-3 {
+		margin-right: 1rem;
+	}
+}
+
+@media screen and (max-width: 470px) {
+	#owl-img-1, #owl-img-2, #owl-img-3 {
+		margin-right: 0;
+		margin-top: 5rem;
+		height: 30%;
+		top: 20rem;
+	}
+}
